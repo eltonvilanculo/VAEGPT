@@ -19,5 +19,7 @@ const ai_routes_1 = __importDefault(require("./routes/ai.routes"));
         logger: true,
     });
     fastify.register(ai_routes_1.default);
-    fastify.listen({ port: 9999, host: "0.0.0.0" }, () => { console.log("listening on port 9999"); });
+    fastify.listen({ port: 8080, host: "0.0.0.0" }, () => {
+        console.log("listening on port 9999");
+    });
 }))();
