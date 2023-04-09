@@ -1,0 +1,19 @@
+{
+  "name": "VAEGPT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "fastify": "^4.15.0",
+    "openai": "^3.2.1",
+    "tsx": "^3.12.6",
+    "zod": "^3.21.4"
+  }
+}
