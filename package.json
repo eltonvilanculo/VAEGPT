@@ -4,10 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "build": "rimraf dist && tsc",
+    "ts.check": "tsc --project tsconfig.json",
+    "add-build": "git add dist"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^4.4.1",
     "typescript": "^5.0.4"
   },
   "dependencies": {
