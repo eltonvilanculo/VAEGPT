@@ -7,7 +7,7 @@
     "dev": "tsx watch src/server.ts",
     "build": "rimraf dist && tsc",
     "ts.check": "tsc --project tsconfig.json",
-    "add-build": "git add dist"
+    "add-build": "git add build/dist"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
@@ -21,11 +21,9 @@
     "openai": "^3.2.1",
     "tsx": "^3.12.6",
     "zod": "^3.21.4"
-  },
-  "pre-commit": [
-    "ts.check",
-    "build",
-    "add-build"
-]
+  }
+
+
+
 
 }
