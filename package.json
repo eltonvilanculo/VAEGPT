@@ -21,5 +21,11 @@
     "openai": "^3.2.1",
     "tsx": "^3.12.6",
     "zod": "^3.21.4"
-  }
+  },
+  "pre-commit": [
+    "ts.check",
+    "build",
+    "add-build"
+]
+
 }
